@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,130 @@
 
 .read-the-docs {
   color: #888;
+} */
+/* Base styles for the whole app */
+/* #root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Logos and Animations */
+/* -------------------------
+  GLOBAL STYLES
+------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* -------------------------
+  HERO SECTION
+------------------------- */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #999;
+}
+
+/* -------------------------
+  SKILL PROGRESS
+------------------------- */
+.skill-bar {
+  height: 0.4rem;
+  border-radius: 9999px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.skill-bar-inner {
+  height: 100%;
+  border-radius: inherit;
+  background-color: #facc15; /* yellow for dark mode default */
+  transition: width 1s ease-in-out;
+}
+
+/* -------------------------
+  MODAL
+------------------------- */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modal-content {
+  background-color: #111;
+  border-radius: 2rem;
+  padding: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+/* -------------------------
+  BUTTONS
+------------------------- */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------------
+  FOOTER
+------------------------- */
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #888;
+}
+
+/* -------------------------
+  RESPONSIVE
+------------------------- */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
